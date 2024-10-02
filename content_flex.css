@@ -144,12 +144,14 @@ header {
 .top .container {
     margin-top: 30px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 0 2%;
 }
 
 .photo {
-    width: 45%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,19 +163,21 @@ header {
     mask-position: center center;
     mask-size: cover;
     width: 100%;
-    transition: 0.45s linear all;
+    transition: 0.5s ease all;
 }
 
 .photo img:hover {
-    transform: scale(1.02);
+    transform: scale(1.1);
 }
 
 .des {
+    margin-top: 50px;
     padding: 0 4%;
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
 }
 
 .des h1 {
@@ -207,6 +211,7 @@ header {
 }
 
 .des p {
+    width: 100%;
     margin-bottom: 10px;
     font-size: 24px;
     letter-spacing: 2px;
@@ -342,7 +347,7 @@ header {
     height: 50px;
 }
 
-.bottom .skill2,.bottom .skill3,.bottom .skill4 {
+.bottom .skill2,.bottom .skill3,.bottom .skill4,.bottom .skill5 {
     height: 180px;
     border-bottom: 1px solid gray;
     font-size: 21px;
